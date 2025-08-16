@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SWAPI Explorer</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>⭐ Star Wars API Explorer</h1>
+
+      <div class="controls">
+        <select id="entityType">
+          <option value="people">Персонажи</option>
+          <option value="planets">Планеты</option>
+          <option value="films">Фильмы</option>
+          <option value="species">Виды</option>
+          <option value="vehicles">Транспорт</option>
+          <option value="starships">Корабли</option>
+        </select>
+
+        <select id="entityId">
+          <option value="1">ID: 1</option>
+          <option value="2">ID: 2</option>
+          <option value="3">ID: 3</option>
+          <option value="4">ID: 4</option>
+          <option value="5">ID: 5</option>
+          <option value="6">ID: 6</option>
+          <option value="7">ID: 7</option>
+          <option value="8">ID: 8</option>
+          <option value="9">ID: 9</option>
+          <option value="10">ID: 10</option>
+        </select>
+
+        <button id="fetchButton">Получить данные</button>
+      </div>
+
+      <div class="loader" id="loader"></div>
+
+      <div class="result-area">
+        <pre id="result"></pre>
+        <div class="error-message" id="error"></div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
